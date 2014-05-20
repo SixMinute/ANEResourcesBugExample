@@ -1,5 +1,5 @@
 version: 1.5.2
-apkFileName: anet3estapk
+apkFileName: ane3testapk
 isFrameworkApk: false
 usesFramework:
   ids:

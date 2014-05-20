@@ -67,29 +67,30 @@
     <public type="drawable" name="wand_background" id="0x7f02002d" />
     <public type="drawable" name="wand_logo" id="0x7f02002e" />
     <public type="drawable" name="wand_texture" id="0x7f02002f" />
-    <public type="layout" name="com_facebook_friendpickerfragment" id="0x7f030000" />
-    <public type="layout" name="com_facebook_login_activity_layout" id="0x7f030001" />
-    <public type="layout" name="com_facebook_picker_activity_circle_row" id="0x7f030002" />
-    <public type="layout" name="com_facebook_picker_checkbox" id="0x7f030003" />
-    <public type="layout" name="com_facebook_picker_image" id="0x7f030004" />
-    <public type="layout" name="com_facebook_picker_list_row" id="0x7f030005" />
-    <public type="layout" name="com_facebook_picker_list_section_header" id="0x7f030006" />
-    <public type="layout" name="com_facebook_picker_search_box" id="0x7f030007" />
-    <public type="layout" name="com_facebook_picker_title_bar" id="0x7f030008" />
-    <public type="layout" name="com_facebook_picker_title_bar_stub" id="0x7f030009" />
-    <public type="layout" name="com_facebook_placepickerfragment" id="0x7f03000a" />
-    <public type="layout" name="com_facebook_placepickerfragment_list_row" id="0x7f03000b" />
-    <public type="layout" name="com_facebook_search_bar_layout" id="0x7f03000c" />
-    <public type="layout" name="com_facebook_tooltip_bubble" id="0x7f03000d" />
-    <public type="layout" name="com_facebook_usersettingsfragment" id="0x7f03000e" />
-    <public type="layout" name="expandable_chooser_row" id="0x7f03000f" />
-    <public type="layout" name="expandable_multiple_chooser_row" id="0x7f030010" />
-    <public type="layout" name="main" id="0x7f030011" />
-    <public type="layout" name="multiple_file_selection_panel" id="0x7f030012" />
-    <public type="layout" name="ssl_certificate_warning" id="0x7f030013" />
-    <public type="layout" name="wand_companion" id="0x7f030014" />
-    <public type="layout" name="wand_default" id="0x7f030015" />
-    <public type="layout" name="wand_main" id="0x7f030016" />
+    <public type="layout" name="com_chartboost_fragment" id="0x7f030000" />
+    <public type="layout" name="com_facebook_friendpickerfragment" id="0x7f030001" />
+    <public type="layout" name="com_facebook_login_activity_layout" id="0x7f030002" />
+    <public type="layout" name="com_facebook_picker_activity_circle_row" id="0x7f030003" />
+    <public type="layout" name="com_facebook_picker_checkbox" id="0x7f030004" />
+    <public type="layout" name="com_facebook_picker_image" id="0x7f030005" />
+    <public type="layout" name="com_facebook_picker_list_row" id="0x7f030006" />
+    <public type="layout" name="com_facebook_picker_list_section_header" id="0x7f030007" />
+    <public type="layout" name="com_facebook_picker_search_box" id="0x7f030008" />
+    <public type="layout" name="com_facebook_picker_title_bar" id="0x7f030009" />
+    <public type="layout" name="com_facebook_picker_title_bar_stub" id="0x7f03000a" />
+    <public type="layout" name="com_facebook_placepickerfragment" id="0x7f03000b" />
+    <public type="layout" name="com_facebook_placepickerfragment_list_row" id="0x7f03000c" />
+    <public type="layout" name="com_facebook_search_bar_layout" id="0x7f03000d" />
+    <public type="layout" name="com_facebook_tooltip_bubble" id="0x7f03000e" />
+    <public type="layout" name="com_facebook_usersettingsfragment" id="0x7f03000f" />
+    <public type="layout" name="expandable_chooser_row" id="0x7f030010" />
+    <public type="layout" name="expandable_multiple_chooser_row" id="0x7f030011" />
+    <public type="layout" name="main" id="0x7f030012" />
+    <public type="layout" name="multiple_file_selection_panel" id="0x7f030013" />
+    <public type="layout" name="ssl_certificate_warning" id="0x7f030014" />
+    <public type="layout" name="wand_companion" id="0x7f030015" />
+    <public type="layout" name="wand_default" id="0x7f030016" />
+    <public type="layout" name="wand_main" id="0x7f030017" />
     <public type="raw" name="adobelogo" id="0x7f040000" />
     <public type="raw" name="debugger" id="0x7f040001" />
     <public type="raw" name="debuginfo" id="0x7f040002" />

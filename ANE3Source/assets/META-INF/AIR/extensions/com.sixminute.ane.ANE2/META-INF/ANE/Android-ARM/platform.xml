@@ -3,4 +3,10 @@
 	    <packagedDependency>android-support-v4.jar</packagedDependency> 
 	    <packagedDependency>chartboost.jar</packagedDependency> 
 	</packagedDependencies>
+	<packagedResources> 
+	  <packagedResource> 
+	        <packageName>com.chartboost.android</packageName> 
+	        <folderName>chartboost_res</folderName>
+	    </packagedResource> 
+	</packagedResources> 
 </platform>

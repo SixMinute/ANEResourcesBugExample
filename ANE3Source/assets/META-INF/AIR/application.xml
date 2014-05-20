@@ -5,7 +5,7 @@
 	<name>ANE3Test-debug</name>
 	<versionNumber>1.0.0</versionNumber>
 	<initialWindow>
-		<content>ANET3est.swf</content>
+		<content>ANE3Test.swf</content>
 	<visible>true</visible>
     </initialWindow>
 
