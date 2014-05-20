@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: anet3estapk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '17'
+packageInfo:
+  cur_package: air.com.sixminute.ANE3Test.debug
+  orig_package: air.com.sixminute.ANE3Test.debug
+compressionType: true

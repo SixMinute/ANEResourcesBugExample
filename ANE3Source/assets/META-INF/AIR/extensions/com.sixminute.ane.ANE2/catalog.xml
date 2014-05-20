@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+    <versions>
+        <swc version="1.2"/>
+        <flex version="4.7.0" build="354131" minimumSupportedVersion="3.0.0"/>
+        <compiler name="ActionScript Compiler" version="2.0.0" build="354131"/>
+    </versions>
+    <features>
+        <feature-script-deps/>
+    </features>
+    <libraries>
+        <library path="library.swf">
+            <script name="com/sixminute/ane/ANE2" mod="1400593943000">
+                <def id="com.sixminute.ane:ANE2"/>
+                <dep id="Error" type="e"/>
+                <dep id="String" type="s"/>
+                <dep id="flash.events:EventDispatcher" type="i"/>
+                <dep id="flash.external:ExtensionContext" type="s"/>
+                <dep id="trace" type="e"/>
+            </script>
+            <digests>
+                <digest type="SHA-256" signed="false" value="9a620758799ce3a407a1eae07cfd988094182741c8f098e4e0f5d321941713f5"/>
+            </digests>
+        </library>
+    </libraries>
+</swc>

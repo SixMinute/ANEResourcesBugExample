@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/14.0">
+	<id>com.sixminute.ANE2Test</id>
+	<filename>ANE2Test</filename>
+	<name>ANE2Test</name>
+	<versionNumber>1.0.0</versionNumber>
+	<initialWindow>
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+	<visible>true</visible>
+    </initialWindow>
+
+	<android>
+        <manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto">
+			    <uses-permission android:name="android.permission.INTERNET"/>
+			</manifest>
+		]]></manifestAdditions>
+    </android>
+	
+	<extensions>
+        <extensionID>com.sixminute.ane.ANE2</extensionID>
+    </extensions>
+</application>

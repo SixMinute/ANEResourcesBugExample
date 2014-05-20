@@ -1,0 +1,6 @@
+<platform xmlns="http://ns.adobe.com/air/extension/13.0">
+    <packagedDependencies> 
+	    <packagedDependency>android-support-v4.jar</packagedDependency> 
+	    <packagedDependency>chartboost.jar</packagedDependency> 
+	</packagedDependencies>
+</platform>

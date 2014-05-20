@@ -1,0 +1,12 @@
+<platform xmlns="http://ns.adobe.com/air/extension/13.0">
+    <packagedDependencies> 
+	    <packagedDependency>android-support-v4.jar</packagedDependency> 
+	    <packagedDependency>facebooksdk.jar</packagedDependency> 
+	</packagedDependencies>
+	<packagedResources> 
+	  <packagedResource> 
+	        <packageName>com.facebook.android</packageName> 
+	        <folderName>facebook_res</folderName>
+	    </packagedResource> 
+	</packagedResources> 
+</platform>
