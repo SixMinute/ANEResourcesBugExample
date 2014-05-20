@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1000000" android:versionName="1.0.0" android:installLocation="auto" package="air.com.sixminute.ANE1Test.debug"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false">
+        <activity android:theme="@style/Theme.NoShadow" android:label="@string/app_name" android:name=".AppEntry" android:launchMode="singleTask" android:screenOrientation="user" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="namespaceVersion" android:value="14.0" />
+            <meta-data android:name="fullScreen" android:value="false" />
+            <meta-data android:name="uniqueappversionid" android:value="b262968f-b947-4cd2-b6f2-1216268bfdf1" />
+            <meta-data android:name="initialcontent" android:value="ANE1Test.swf" />
+            <meta-data android:name="containsVideo" android:value="false" />
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

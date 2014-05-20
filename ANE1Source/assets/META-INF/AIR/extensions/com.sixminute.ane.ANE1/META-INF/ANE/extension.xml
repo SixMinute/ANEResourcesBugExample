@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/13.0">
+	<id>com.sixminute.ane.ANE1</id>
+	<versionNumber>1</versionNumber>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libANE1.jar</nativeLibrary>
+				<initializer>com.sixminute.ane1.ANE1Extension</initializer>
+				<finalizer>com.sixminute.ane1.ANE1Extension</finalizer>
+			</applicationDeployment>
+		</platform>
+	</platforms>
+</extension>

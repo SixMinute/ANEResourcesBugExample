@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: ane1testapk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '17'
+packageInfo:
+  cur_package: air.com.sixminute.ANE1Test.debug
+  orig_package: air.com.sixminute.ANE1Test.debug
+compressionType: true
