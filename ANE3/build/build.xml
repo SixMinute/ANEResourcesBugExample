@@ -1,15 +1,12 @@
-<project name='ANE-Device Controller' basedir='.' default='compile'>
+<project name='ANE-Device Controller' basedir='../' default='compile'>
 
 	<!-- Load variables -->
-	<property file='build.properties'/>
-
-	<!-- Include tasks -->
-  	<taskdef resource='net/sf/antcontrib/antlib.xml' classpath='${ANT_CONTRIB.JAR}'/>
+	<property file='build/build.properties'/>
 
 	<!-- Compile ANE -->
 	<target name='compile'>
 		<local name='build_dir' />
-		<property name='build_dir' value='${basedir}/../bin-debug'/>
+		<property name='build_dir' value='bin-debug'/>
 		
 		<local name='proj_name' />
 		<property name='proj_name' value='ANE3Test' />
@@ -27,7 +24,7 @@
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='false'>
 			<arg value='-version' />
 		</exec>
-
+		
 		<echo>attempting uninstall of ${appid}</echo>
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='false' dir='${build_dir}'>
 			<arg value='-uninstallApp' />
@@ -35,13 +32,13 @@
 			<arg line='-appid ${appid}' />
 			<env key='JAVA_HOME' value='${java.home}' />
 		</exec>
-
+		
 		<echo>packaging ${output}
 ${AIR_HOME}/bin/adt \
 	-package -target apk \
 	-storetype pkcs12 -keystore "${KEYFILE}" -storepass ${KEYPASS} \
 	${output} ${proj_name}-app.xml ${proj_name}.swf
-	-extdir ${build_dir}/../libs/
+	-extdir ../libs/
 		</echo>
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='true' dir='${build_dir}'>
 			<arg value='-package' />
@@ -53,10 +50,10 @@ ${AIR_HOME}/bin/adt \
 			
 			<arg line='${output} ${proj_name}-app.xml ${proj_name}.swf' />
 			
-			<arg line='-extdir ${build_dir}/../libs/' />
+			<arg line='-extdir ../libs/' />
 			<env key='JAVA_HOME' value='${java.home}' />
 		</exec>
-
+		
 		<echo>installing ${output}</echo>
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='true' dir='${build_dir}'>
 			<arg value='-installApp' />
@@ -64,7 +61,7 @@ ${AIR_HOME}/bin/adt \
 			<arg line='-package ${output}' />
 			<env key='JAVA_HOME' value='${java.home}' />
 		</exec>
-
+		
 		<echo>launching ${appid}</echo>
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='true' dir='${build_dir}'>
 			<arg value='-launchApp' />
@@ -73,5 +70,4 @@ ${AIR_HOME}/bin/adt \
 			<env key='JAVA_HOME' value='${java.home}' />
 		</exec>
 	</target>
-	
 </project>
