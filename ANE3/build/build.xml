@@ -1,0 +1,77 @@
+<project name='ANE-Device Controller' basedir='.' default='compile'>
+
+	<!-- Load variables -->
+	<property file='build.properties'/>
+
+	<!-- Include tasks -->
+  	<taskdef resource='net/sf/antcontrib/antlib.xml' classpath='${ANT_CONTRIB.JAR}'/>
+
+	<!-- Compile ANE -->
+	<target name='compile'>
+		<local name='build_dir' />
+		<property name='build_dir' value='${basedir}/../bin-debug'/>
+		
+		<local name='proj_name' />
+		<property name='proj_name' value='ANE3Test' />
+		
+		<local name='output' />
+		<property name='output' value='${proj_name}.apk' />
+		
+		<local name='appid' />
+		<property name='appid' value='com.sixminute.${proj_name}.debug'/>
+		
+		<echo>
+	${java.runtime.version} - ${java.home}
+	${os.name} ${os.arch} ${os.version}
+		</echo>
+		<exec executable='${AIR_HOME}/bin/adt' failonerror='false'>
+			<arg value='-version' />
+		</exec>
+
+		<echo>attempting uninstall of ${appid}</echo>
+		<exec executable='${AIR_HOME}/bin/adt' failonerror='false' dir='${build_dir}'>
+			<arg value='-uninstallApp' />
+			<arg line='-platform android' />
+			<arg line='-appid ${appid}' />
+			<env key='JAVA_HOME' value='${java.home}' />
+		</exec>
+
+		<echo>packaging ${output}
+${AIR_HOME}/bin/adt \
+	-package -target apk \
+	-storetype pkcs12 -keystore "${KEYFILE}" -storepass ${KEYPASS} \
+	${output} ${proj_name}-app.xml ${proj_name}.swf
+	-extdir ${build_dir}/../libs/
+		</echo>
+		<exec executable='${AIR_HOME}/bin/adt' failonerror='true' dir='${build_dir}'>
+			<arg value='-package' />
+			<arg line='-target apk' />
+			
+			<arg line='-storetype pkcs12' />
+			<arg line='-keystore "${KEYFILE}"' />
+			<arg line='-storepass ${KEYPASS}' />
+			
+			<arg line='${output} ${proj_name}-app.xml ${proj_name}.swf' />
+			
+			<arg line='-extdir ${build_dir}/../libs/' />
+			<env key='JAVA_HOME' value='${java.home}' />
+		</exec>
+
+		<echo>installing ${output}</echo>
+		<exec executable='${AIR_HOME}/bin/adt' failonerror='true' dir='${build_dir}'>
+			<arg value='-installApp' />
+			<arg line='-platform android' />
+			<arg line='-package ${output}' />
+			<env key='JAVA_HOME' value='${java.home}' />
+		</exec>
+
+		<echo>launching ${appid}</echo>
+		<exec executable='${AIR_HOME}/bin/adt' failonerror='true' dir='${build_dir}'>
+			<arg value='-launchApp' />
+			<arg line='-platform android' />
+			<arg line='-appid ${appid}' />
+			<env key='JAVA_HOME' value='${java.home}' />
+		</exec>
+	</target>
+	
+</project>
