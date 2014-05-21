@@ -18,8 +18,11 @@
 		<property name='appid' value='com.sixminute.${proj_name}.debug'/>
 		
 		<echo>
-	${java.runtime.version} - ${java.home}
-	${os.name} ${os.arch} ${os.version}
+Mac
+${os.name} ${os.arch} ${os.version}
+Java
+${java.runtime.version} - ${java.home}
+AIR
 		</echo>
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='false'>
 			<arg value='-version' />
