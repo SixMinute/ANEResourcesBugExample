@@ -21,7 +21,7 @@
 Mac
 ${os.name} ${os.arch} ${os.version}
 Java
-${java.runtime.version} - ${java.home}
+${java.runtime.version} - ${JAVA_HOME}
 AIR
 		</echo>
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='false'>
@@ -33,13 +33,13 @@ AIR
 			<arg value='-uninstallApp' />
 			<arg line='-platform android' />
 			<arg line='-appid ${appid}' />
-			<env key='JAVA_HOME' value='${java.home}' />
+			<env key='JAVA_HOME' value='${JAVA_HOME}' />
 		</exec>
 		
 		<echo>packaging ${output}
 ${AIR_HOME}/bin/adt \
 	-package -target apk \
-	-storetype pkcs12 -keystore "${KEYFILE}" -storepass ${KEYPASS} \
+	-storetype pkcs12 -keystore '${KEYFILE}' -storepass ${KEYPASS} \
 	${output} ${proj_name}-app.xml ${proj_name}.swf
 	-extdir ../libs/
 		</echo>
@@ -54,7 +54,7 @@ ${AIR_HOME}/bin/adt \
 			<arg line='${output} ${proj_name}-app.xml ${proj_name}.swf' />
 			
 			<arg line='-extdir ../libs/' />
-			<env key='JAVA_HOME' value='${java.home}' />
+			<env key='JAVA_HOME' value='${JAVA_HOME}' />
 		</exec>
 		
 		<echo>installing ${output}</echo>
@@ -62,7 +62,7 @@ ${AIR_HOME}/bin/adt \
 			<arg value='-installApp' />
 			<arg line='-platform android' />
 			<arg line='-package ${output}' />
-			<env key='JAVA_HOME' value='${java.home}' />
+			<env key='JAVA_HOME' value='${JAVA_HOME}' />
 		</exec>
 		
 		<echo>launching ${appid}</echo>
@@ -70,7 +70,7 @@ ${AIR_HOME}/bin/adt \
 			<arg value='-launchApp' />
 			<arg line='-platform android' />
 			<arg line='-appid ${appid}' />
-			<env key='JAVA_HOME' value='${java.home}' />
+			<env key='JAVA_HOME' value='${JAVA_HOME}' />
 		</exec>
 	</target>
 </project>
