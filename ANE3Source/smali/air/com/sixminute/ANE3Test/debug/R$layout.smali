@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x31
     name = "layout"
 .end annotation
 
@@ -47,29 +47,12 @@
 
 .field public static final com_facebook_usersettingsfragment:I = 0x7f03000f
 
-.field public static final expandable_chooser_row:I = 0x7f030010
-
-.field public static final expandable_multiple_chooser_row:I = 0x7f030011
-
-.field public static final main:I = 0x7f030012
-
-.field public static final multiple_file_selection_panel:I = 0x7f030013
-
-.field public static final ssl_certificate_warning:I = 0x7f030014
-
-.field public static final wand_companion:I = 0x7f030015
-
-.field public static final wand_default:I = 0x7f030016
-
-.field public static final wand_main:I = 0x7f030017
-
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 296
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

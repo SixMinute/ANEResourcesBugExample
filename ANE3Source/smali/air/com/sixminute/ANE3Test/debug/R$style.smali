@@ -9,15 +9,13 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x31
     name = "style"
 .end annotation
 
 
 # static fields
-.field public static final BackgroundImage_Fullscreen:I = 0x7f090003
-
-.field public static final Theme_NoShadow:I = 0x7f090004
+.field public static final Theme_NoShadow:I = 0x7f090003
 
 .field public static final com_facebook_loginview_default_style:I = 0x7f090000
 
@@ -31,7 +29,6 @@
     .locals 0
 
     .prologue
-    .line 423
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

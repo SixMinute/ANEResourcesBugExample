@@ -12,9 +12,14 @@
         <library path="library.swf">
             <script name="com/sixminute/ane/ANE2" mod="1400593943000">
                 <def id="com.sixminute.ane:ANE2"/>
+                <dep id="Error" type="e"/>
+                <dep id="String" type="s"/>
+                <dep id="flash.events:EventDispatcher" type="i"/>
+                <dep id="flash.external:ExtensionContext" type="s"/>
+                <dep id="trace" type="e"/>
             </script>
             <digests>
-                <digest type="SHA-256" signed="false" value="f46f6e453e78be1624cf9748cca006b0f06590bf9566e6fd02064193f738e1c6"/>
+                <digest type="SHA-256" signed="false" value="9a4dd7503ca529163bc626a55e318f51f370ecdf9290917039fd657012a8da5e"/>
             </digests>
         </library>
     </libraries>

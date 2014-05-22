@@ -14,7 +14,7 @@
 	</target>	
 
 	<!-- Clean Android project -->
-	<target name='androidClean'>
+	<target name='androidClean' depends='cleanBinaries'>
 		
 		<delete dir='${ANDROID_BUILD_FOLDER}'/>
 		<mkdir dir='${ANDROID_BUILD_FOLDER}'/>
@@ -38,9 +38,10 @@
 	    	<fileset dir='${ANDROID_LIBS_FOLDER}' includes='*.jar' />
             <pathelement location='${ANDROID.JAR}'/>
     	</path>
-        
+		
         <javac srcdir='${ANDROID_SRC_FOLDER}' destdir='./androidTemp/classes' includeantruntime='false'>
             <classpath refid='libJarFiles' />
+        	<classpath path='${ANDROID_FOLDER}/ChartboostResources/bin/classes' />
         </javac>
         <jar basedir='./androidTemp/classes' destfile='${ANDROID_LIB_PATH}'/>
 		

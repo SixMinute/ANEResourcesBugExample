@@ -9,67 +9,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x31
     name = "string"
 .end annotation
 
 
 # static fields
-.field public static final IDA_APP_DEBUGGER_TIMEOUT_INFO:I = 0x7f080038
+.field public static final app_name:I = 0x7f08001a
 
-.field public static final IDA_APP_UNABLE_LISTEN_ERROR:I = 0x7f080036
+.field public static final app_version:I = 0x7f08001b
 
-.field public static final IDA_APP_WAITING_DEBUGGER_TITLE:I = 0x7f080035
+.field public static final button_cancel:I = 0x7f080028
 
-.field public static final IDA_APP_WAITING_DEBUGGER_WARNING:I = 0x7f080037
+.field public static final button_exit:I = 0x7f08001d
 
-.field public static final IDA_CERTIFICATE_DETAILS:I = 0x7f080034
+.field public static final button_install:I = 0x7f08001c
 
-.field public static final IDA_CURL_INTERFACE_ALLSESS:I = 0x7f08002e
-
-.field public static final IDA_CURL_INTERFACE_CERTIFICATE_DETAILS_TITLE:I = 0x7f080033
-
-.field public static final IDA_CURL_INTERFACE_CNAME_MSG:I = 0x7f080031
-
-.field public static final IDA_CURL_INTERFACE_NOSESS:I = 0x7f08002b
-
-.field public static final IDA_CURL_INTERFACE_OK:I = 0x7f08002c
-
-.field public static final IDA_CURL_INTERFACE_SERVER:I = 0x7f08002f
-
-.field public static final IDA_CURL_INTERFACE_THISSESS:I = 0x7f08002a
-
-.field public static final IDA_CURL_INTERFACE_TRUSTSER:I = 0x7f080030
-
-.field public static final IDA_CURL_INTERFACE_UNVERSER_2:I = 0x7f08002d
-
-.field public static final IDA_CURL_INTERFACE_VIEW_CERT:I = 0x7f080032
-
-.field public static final IDA_CURL_SSL_SECURITY_WARNING:I = 0x7f080029
-
-.field public static final air_wand:I = 0x7f080028
-
-.field public static final app_name:I = 0x7f080027
-
-.field public static final app_version:I = 0x7f080039
-
-.field public static final audio_files:I = 0x7f08001b
-
-.field public static final button_cancel:I = 0x7f080020
-
-.field public static final button_continue:I = 0x7f080021
-
-.field public static final button_exit:I = 0x7f08003b
-
-.field public static final button_install:I = 0x7f08003a
-
-.field public static final button_install_air_from_playstore:I = 0x7f080045
-
-.field public static final button_no:I = 0x7f080026
-
-.field public static final button_ok:I = 0x7f08001f
-
-.field public static final button_yes:I = 0x7f080025
+.field public static final button_install_air_from_playstore:I = 0x7f080027
 
 .field public static final com_facebook_choose_friends:I = 0x7f08000f
 
@@ -123,39 +79,25 @@
 
 .field public static final com_facebook_usersettingsfragment_not_logged_in:I = 0x7f08000a
 
-.field public static final empty_file_list:I = 0x7f08001e
+.field public static final text_air_missing_header:I = 0x7f080025
 
-.field public static final file_download:I = 0x7f080023
+.field public static final text_air_missing_text:I = 0x7f080026
 
-.field public static final file_save_as:I = 0x7f080022
+.field public static final text_dont_show_again:I = 0x7f080029
 
-.field public static final file_upload:I = 0x7f080024
+.field public static final text_gamepreview_loading:I = 0x7f080022
 
-.field public static final flash_browser_plugin:I = 0x7f08001a
+.field public static final text_gamepreview_loading_error:I = 0x7f080023
 
-.field public static final image_files:I = 0x7f08001c
+.field public static final text_install_gamepreview_app:I = 0x7f080024
 
-.field public static final text_air_missing_header:I = 0x7f080043
+.field public static final text_install_runtime:I = 0x7f080020
 
-.field public static final text_air_missing_text:I = 0x7f080044
+.field public static final text_runtime_on_external_storage:I = 0x7f080021
 
-.field public static final text_dont_show_again:I = 0x7f080046
+.field public static final text_runtime_required:I = 0x7f08001f
 
-.field public static final text_gamepreview_loading:I = 0x7f080040
-
-.field public static final text_gamepreview_loading_error:I = 0x7f080041
-
-.field public static final text_install_gamepreview_app:I = 0x7f080042
-
-.field public static final text_install_runtime:I = 0x7f08003e
-
-.field public static final text_runtime_on_external_storage:I = 0x7f08003f
-
-.field public static final text_runtime_required:I = 0x7f08003d
-
-.field public static final title_adobe_air:I = 0x7f08003c
-
-.field public static final video_files:I = 0x7f08001d
+.field public static final title_adobe_air:I = 0x7f08001e
 
 
 # direct methods
@@ -163,7 +105,6 @@
     .locals 0
 
     .prologue
-    .line 333
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

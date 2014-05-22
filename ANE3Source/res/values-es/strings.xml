@@ -25,63 +25,7 @@
     <string name="com_facebook_requesterror_password_changed">Su contraseña de Facebook ha cambiado, por favor vuelva a conectar la aplicación con Facebook.</string>
     <string name="com_facebook_requesterror_reconnect">Se produjo un error al conectar con Facebook, por favor vuelva a conectar la aplicación con Facebook.</string>
     <string name="com_facebook_requesterror_permissions">Una conexión de aplicación con Facebook falló debido a permisos insuficientes, por favor, conceda los permisos de aplicaciones para realizar la operación.</string>
-    <string name="flash_browser_plugin">Plug-in de Flash</string>
-    <string name="audio_files">Archivos de audio</string>
-    <string name="image_files">Archivos de imagen</string>
-    <string name="video_files">Archivos de vídeo</string>
-    <string name="empty_file_list">No se encontró ningún archivo.</string>
-    <string name="button_ok">Aceptar</string>
-    <string name="button_cancel">Cancelar</string>
-    <string name="button_continue">Continuar</string>
-    <string name="file_save_as">Guardar como:</string>
-    <string name="file_download">Descargar</string>
-    <string name="file_upload">Cargar</string>
-    <string name="button_yes">Sí</string>
-    <string name="button_no">No</string>
     <string name="app_name">ANE3Test-debug</string>
-    <string name="IDA_CURL_SSL_SECURITY_WARNING">Advertencia de seguridad</string>
-    <string name="IDA_CURL_INTERFACE_THISSESS">Confiar en la sesión</string>
-    <string name="IDA_CURL_INTERFACE_NOSESS">Cancelar</string>
-    <string name="IDA_CURL_INTERFACE_OK">Aceptar</string>
-    <string name="IDA_CURL_INTERFACE_UNVERSER_2">El servidor al que la aplicación se está conectando no está verificado.</string>
-    <string name="IDA_CURL_INTERFACE_ALLSESS">Confiar siempre</string>
-    <string name="IDA_CURL_INTERFACE_SERVER"><b>Servidor:</b></string>
-    <string name="IDA_CURL_INTERFACE_TRUSTSER">¿Confiar en este servidor y realizar la conexión?</string>
-    <string name="IDA_CURL_INTERFACE_CNAME_MSG">El nombre del servidor (%1$s) no coincide con el nombre del certificado (%2$s). ¿Confiar en este servidor y continuar?</string>
-    <string name="IDA_CURL_INTERFACE_VIEW_CERT"><u>Ver certificado</u></string>
-    <string name="IDA_CURL_INTERFACE_CERTIFICATE_DETAILS_TITLE"><u>Detalles del certificado</u></string>
-    <string name="IDA_CERTIFICATE_DETAILS"><b>Certificado:</b>"
- 
- "<u><b>Emitido a:</b></u>"
- Nombre común:
- %1$s
- 
- Organización:
- %2$s
- 
- Departamento:
- %3$s
- 
- "<u><b>Emitido por:</b></u>"
- Nombre común:
- %4$s
- 
- Organización:
- %5$s
- 
- Departamento:
- %6$s
- 
- "<u><b>Validez:</b></u>"
- Emitido el:
- %7$s
- 
- Caduca el:
- %8$s "</string>
-    <string name="IDA_APP_WAITING_DEBUGGER_TITLE"><u>Adobe AIR: Esperando conexión</u></string>
-    <string name="IDA_APP_UNABLE_LISTEN_ERROR"><u>Adobe AIR: Detectando puerto</u></string>
-    <string name="IDA_APP_WAITING_DEBUGGER_WARNING"><u>La aplicación de AIR está esperando al depurador para establecer una conexión. Este proceso puede durar hasta %d segundos.</u></string>
-    <string name="IDA_APP_DEBUGGER_TIMEOUT_INFO">No se puede conectar con el depurador.</string>
     <string name="app_version">APP_VERSION</string>
     <string name="button_install">Instalar</string>
     <string name="button_exit">Salir</string>
@@ -97,5 +41,6 @@
     <string name="text_air_missing_header">Se necesita Adobe AIR</string>
     <string name="text_air_missing_text">Necesita instalar Adobe AIR para que la previsualización del juego funcione.</string>
     <string name="button_install_air_from_playstore">Instalar desde Play Store.</string>
+    <string name="button_cancel">Cancelar</string>
     <string name="text_dont_show_again">No volver a mostrar</string>
 </resources>

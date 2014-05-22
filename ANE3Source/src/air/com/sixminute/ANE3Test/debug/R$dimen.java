@@ -8,7 +8,7 @@ package air.com.sixminute.ANE3Test.debug;
 // Referenced classes of package air.com.sixminute.ANE3Test.debug:
 //            R
 
-public static final class 
+public final class 
 {
 
     public static final int com_facebook_loginview_compound_drawable_padding = 0x7f060008;

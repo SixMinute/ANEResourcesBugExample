@@ -8,7 +8,7 @@ package air.com.sixminute.ANE3Test.debug;
 // Referenced classes of package air.com.sixminute.ANE3Test.debug:
 //            R
 
-public static final class 
+public final class 
 {
 
     public static final int confirm_logout = 0x7f01000c;

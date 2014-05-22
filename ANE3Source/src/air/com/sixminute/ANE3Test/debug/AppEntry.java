@@ -103,7 +103,7 @@ public class AppEntry extends Activity
                 android/app/Activity, [Ljava/lang/String;
             });
             Boolean boolean1 = new Boolean(false);
-            Boolean boolean2 = new Boolean(true);
+            Boolean boolean2 = new Boolean(false);
             String as[] = new String[5];
             as[0] = "";
             as[1] = "";

@@ -36,6 +36,46 @@
 
     invoke-static {v0}, Lcom/sixminute/ane1/ANE1Extension;->DLog(Ljava/lang/String;)V
 
+    const-string v0, "test resource"
+
+    invoke-static {v0}, Lcom/sixminute/ane1/ANE1Extension;->DLog(Ljava/lang/String;)V
+
+    :try_start_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "id: \'"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    sget v1, Lcom/facebook/android/R$layout;->com_facebook_login_activity_layout:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "\'"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/sixminute/ane1/ANE1Extension;->DLog(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    const-string v0, "test resource over"
+
+    invoke-static {v0}, Lcom/sixminute/ane1/ANE1Extension;->DLog(Ljava/lang/String;)V
+
     invoke-static {}, Lcom/sixminute/ane1/ANE1ExtensionContext;->access$000()Lcom/sixminute/ane1/ANE1ExtensionContext$SessionStatusCallback;
 
     move-result-object v0
@@ -148,8 +188,41 @@
     invoke-virtual {v1, v0}, Lcom/facebook/Session;->openForRead(Lcom/facebook/Session$OpenRequest;)V
 
     :cond_1
-    :goto_0
+    :goto_1
     return-object v4
+
+    :catch_0
+    move-exception v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, " - "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getLocalizedMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/sixminute/ane1/ANE1Extension;->DLog(Ljava/lang/String;)V
+
+    goto/16 :goto_0
 
     :cond_2
     invoke-virtual {v1}, Lcom/facebook/Session;->isClosed()Z
@@ -170,5 +243,5 @@
 
     invoke-static {v0, v1, v2}, Lcom/facebook/Session;->openActiveSession(Landroid/app/Activity;ZLcom/facebook/Session$StatusCallback;)Lcom/facebook/Session;
 
-    goto :goto_0
+    goto :goto_1
 .end method

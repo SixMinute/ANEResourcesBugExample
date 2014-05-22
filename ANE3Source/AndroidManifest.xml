@@ -9,7 +9,7 @@
             </intent-filter>
             <meta-data android:name="namespaceVersion" android:value="14.0" />
             <meta-data android:name="fullScreen" android:value="false" />
-            <meta-data android:name="uniqueappversionid" android:value="86c0b9d1-c645-4e85-af6b-90a88134c8ec" />
+            <meta-data android:name="uniqueappversionid" android:value="ac0f189c-0f50-4b9f-a244-a0ea2323b51f" />
             <meta-data android:name="initialcontent" android:value="ANE3Test.swf" />
             <meta-data android:name="containsVideo" android:value="false" />
         </activity>

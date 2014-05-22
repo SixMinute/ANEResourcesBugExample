@@ -7,10 +7,4 @@
     <color name="com_facebook_usersettingsfragment_connected_shadow_color">#ff000000</color>
     <color name="com_facebook_usersettingsfragment_not_connected_text_color">#ffa6aed7</color>
     <color name="com_facebook_loginview_text_color">#ffffffff</color>
-    <color name="white">#ffffffff</color>
-    <color name="black">#ff000000</color>
-    <color name="red">#fff51111</color>
-    <color name="gray">#ff888888</color>
-    <color name="transparent">#00000000</color>
-    <color name="opaque_blue">#ff0000ff</color>
 </resources>

@@ -14,7 +14,7 @@
 	</target>	
 
 	<!-- Clean Android project -->
-	<target name='androidClean'>
+	<target name='androidClean' depends='cleanBinaries'>
 		<delete dir='${ANDROID_BUILD_FOLDER}'/>
 		<mkdir dir='${ANDROID_BUILD_FOLDER}'/>
 		
@@ -40,6 +40,7 @@
         
         <javac srcdir='${ANDROID_SRC_FOLDER}' destdir='./androidTemp/classes' includeantruntime='false'>
             <classpath refid='libJarFiles' />
+        	<classpath path='${FACEBOOK_SDK_LOC}/bin/classes' />
         </javac>
         <jar basedir='./androidTemp/classes' destfile='${ANDROID_LIB_PATH}'/>
 		

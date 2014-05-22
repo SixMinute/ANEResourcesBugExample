@@ -19,6 +19,16 @@ public static class
     public FREObject call(FREContext frecontext, FREObject afreobject[])
     {
         ANE2Extension.DLog("FREContext.Initialise");
+        ANE2Extension.DLog("test resource");
+        try
+        {
+            ANE2Extension.DLog((new StringBuilder()).append("id: '").append(com.chartboost.android.).append("'").toString());
+        }
+        catch (Exception exception)
+        {
+            ANE2Extension.DLog((new StringBuilder()).append(exception).append(" - ").append(exception.getLocalizedMessage()).toString());
+        }
+        ANE2Extension.DLog("test resource over");
         Chartboost _tmp = ANE2ExtensionContext.access$002(Chartboost.sharedChartboost());
         ANE2ExtensionContext.access$000().setFramework("air");
         ANE2ExtensionContext.access$000().setImpressionsUseActivities(true);

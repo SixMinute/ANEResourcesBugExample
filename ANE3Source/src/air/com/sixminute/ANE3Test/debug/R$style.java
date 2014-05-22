@@ -8,11 +8,10 @@ package air.com.sixminute.ANE3Test.debug;
 // Referenced classes of package air.com.sixminute.ANE3Test.debug:
 //            R
 
-public static final class 
+public final class 
 {
 
-    public static final int BackgroundImage_Fullscreen = 0x7f090003;
-    public static final int Theme_NoShadow = 0x7f090004;
+    public static final int Theme_NoShadow = 0x7f090003;
     public static final int com_facebook_loginview_default_style = 0x7f090000;
     public static final int com_facebook_loginview_silver_style = 0x7f090001;
     public static final int tooltip_bubble_text = 0x7f090002;

@@ -28,6 +28,9 @@ AIR
 			<arg value='-version' />
 		</exec>
 		
+		<copy file="../ANE1/bin/ANE1.ane" todir="libs" />
+		<copy file="../ANE2/bin/ANE2.ane" todir="libs" />
+		
 		<echo>attempting uninstall of ${appid}</echo>
 		<exec executable='${AIR_HOME}/bin/adt' failonerror='false' dir='${build_dir}'>
 			<arg value='-uninstallApp' />

@@ -27,10 +27,6 @@
         <item name="android:shadowDy">-1.0</item>
         <item name="android:shadowRadius">0.25</item>
     </style>
-    <style name="BackgroundImage.Fullscreen" parent="@*android:style/Theme.NoTitleBar.Fullscreen">
-        <item name="android:windowBackground">@drawable/loading</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
     <style name="Theme.NoShadow" parent="@*android:style/Theme.NoTitleBar">
         <item name="android:windowContentOverlay">@null</item>
     </style>

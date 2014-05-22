@@ -23,6 +23,16 @@ public class ANE2ExtensionContext extends FREContext
         public FREObject call(FREContext frecontext, FREObject afreobject[])
         {
             ANE2Extension.DLog("FREContext.Initialise");
+            ANE2Extension.DLog("test resource");
+            try
+            {
+                ANE2Extension.DLog((new StringBuilder()).append("id: '").append(com.chartboost.android.R.layout.com_chartboost_fragment).append("'").toString());
+            }
+            catch (Exception exception)
+            {
+                ANE2Extension.DLog((new StringBuilder()).append(exception).append(" - ").append(exception.getLocalizedMessage()).toString());
+            }
+            ANE2Extension.DLog("test resource over");
             ANE2ExtensionContext.sChartboost = Chartboost.sharedChartboost();
             ANE2ExtensionContext.sChartboost.setFramework("air");
             ANE2ExtensionContext.sChartboost.setImpressionsUseActivities(true);

@@ -6,6 +6,7 @@ import java.util.Map;
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.adobe.fre.FREObject;
+import com.chartboost.android.R;
 import com.chartboost.sdk.Chartboost;
 
 
@@ -38,6 +39,13 @@ public class ANE2ExtensionContext extends FREContext {
 		@Override
 		public FREObject call(FREContext context, FREObject[] args) {
 			ANE2Extension.DLog("FREContext.Initialise");
+			ANE2Extension.DLog("test resource");
+			try {
+				ANE2Extension.DLog("id: '" + R.layout.com_chartboost_fragment + "'");
+			} catch (Exception e) {
+				ANE2Extension.DLog( e + " - " + e.getLocalizedMessage() );
+			}
+			ANE2Extension.DLog("test resource over");
 			
 	        sChartboost = Chartboost.sharedChartboost();
 	        sChartboost.setFramework("air");

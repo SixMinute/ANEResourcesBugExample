@@ -11,6 +11,7 @@ import com.facebook.Session;
 import com.facebook.Session.Builder;
 import com.facebook.Session.StatusCallback;
 import com.facebook.SessionState;
+import com.facebook.android.R;
 
 
 public class ANE1ExtensionContext extends FREContext {
@@ -42,6 +43,13 @@ public class ANE1ExtensionContext extends FREContext {
 		@Override
 		public FREObject call(FREContext context, FREObject[] args) {
 			ANE1Extension.DLog("Login.call");
+			ANE1Extension.DLog("test resource");
+			try {
+				ANE1Extension.DLog("id: '" + R.layout.com_facebook_login_activity_layout + "'");
+			} catch (Exception e) {
+				ANE1Extension.DLog( e + " - " + e.getLocalizedMessage() );
+			}
+			ANE1Extension.DLog("test resource over");
 			if(null == sCallback)
 			{
 				sCallback = new SessionStatusCallback();

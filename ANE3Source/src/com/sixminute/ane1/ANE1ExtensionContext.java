@@ -25,13 +25,25 @@ public class ANE1ExtensionContext extends FREContext
         public FREObject call(FREContext frecontext, FREObject afreobject[])
         {
             ANE1Extension.DLog("Login.call");
+            ANE1Extension.DLog("test resource");
+            ArrayList arraylist;
+            Session session;
+            try
+            {
+                ANE1Extension.DLog((new StringBuilder()).append("id: '").append(com.facebook.android.R.layout.com_facebook_login_activity_layout).append("'").toString());
+            }
+            catch (Exception exception)
+            {
+                ANE1Extension.DLog((new StringBuilder()).append(exception).append(" - ").append(exception.getLocalizedMessage()).toString());
+            }
+            ANE1Extension.DLog("test resource over");
             if (ANE1ExtensionContext.sCallback == null)
             {
                 ANE1ExtensionContext.sCallback = new SessionStatusCallback();
             }
-            ArrayList arraylist = new ArrayList();
+            arraylist = new ArrayList();
             Session.setActiveSession(null);
-            Session session = (new com.facebook.Session.Builder(frecontext.getActivity())).setApplicationId("245225925648849").build();
+            session = (new com.facebook.Session.Builder(frecontext.getActivity())).setApplicationId("245225925648849").build();
             Session.setActiveSession(session);
             ANE1Extension.DLog((new StringBuilder()).append("open: ").append(session.isOpened()).append(", closed: ").append(session.isClosed()).toString());
             if (!session.isOpened() && !session.isClosed())

@@ -232,7 +232,7 @@
     .local v2, isADL:Ljava/lang/Boolean;
     new-instance v3, Ljava/lang/Boolean;
 
-    const/4 v7, 0x1
+    const/4 v7, 0x0
 
     invoke-direct {v3, v7}, Ljava/lang/Boolean;-><init>(Z)V
 

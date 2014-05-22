@@ -8,7 +8,7 @@ package air.com.sixminute.ANE3Test.debug;
 // Referenced classes of package air.com.sixminute.ANE3Test.debug:
 //            R
 
-public static final class 
+public final class 
 {
 
     public static final int com_chartboost_fragment = 0x7f030000;
@@ -27,14 +27,6 @@ public static final class
     public static final int com_facebook_search_bar_layout = 0x7f03000d;
     public static final int com_facebook_tooltip_bubble = 0x7f03000e;
     public static final int com_facebook_usersettingsfragment = 0x7f03000f;
-    public static final int expandable_chooser_row = 0x7f030010;
-    public static final int expandable_multiple_chooser_row = 0x7f030011;
-    public static final int main = 0x7f030012;
-    public static final int multiple_file_selection_panel = 0x7f030013;
-    public static final int ssl_certificate_warning = 0x7f030014;
-    public static final int wand_companion = 0x7f030015;
-    public static final int wand_default = 0x7f030016;
-    public static final int wand_main = 0x7f030017;
 
     public ()
     {
